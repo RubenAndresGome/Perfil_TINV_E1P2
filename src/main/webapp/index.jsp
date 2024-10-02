@@ -30,12 +30,14 @@
             margin-top: 30px; /* Margen superior */
         }
     </style>
+    
+
 </head>
 <body>
     <main>
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark text-white">
             <div class="container-fluid">
-                <a class="navbar-brand text-warning" href="#">Perfil del Desarrollador</a>
+                <a class="navbar-brand text-warning" href="#">TICS DEV</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -64,8 +66,9 @@
             <!-- Card con la descripción personal -->
             <div class="card text-center mb-4">
                 <div class="card-body">
-                    <h2 class="card-title">Nombre del Desarrollador</h2>
-                    <p class="card-text">Soy un desarrollador web apasionado, especializado en frontend y backend. Aquí tienes algunos detalles sobre mis habilidades:</p>
+                    <h2 class="card-title text-white"> ${fichaDesarrollador.titulo}</h2>
+                    <h5 class="text-align-center text-white"> ${fichaDesarrollador.descripcion}</h5>
+                           
                 </div>
             </div>
 
@@ -74,19 +77,20 @@
                 <!-- Card de lenguajes de programación -->
                 <div class="col-md-4">
                     <div class="card text-center">
+                        <img src="${fichaEscuela.fotoPerfil}" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Lenguajes de Programación</h5>
-                            <ul class="list-unstyled">
-                                <li>Java</li>
-                                <li>JavaScript</li>
-                                <li>Python</li>
-                                <li>HTML & CSS</li>
-                            </ul>
+                           
+                    <ul class="list-group list-group-flush bg-dark">
+                        <li class="list-group-item  fw-bold">${fichaEscuela.descripcion}</li>
+                          <li class="list-group-item "> preparatoria : CETIS 85</li>
+                        <li class="list-group-item ">Estudios Secundarios: Sec. 5 Celaya</li>
+                    </ul>
+                            
                         </div>
                     </div>
                 </div>
 
-                <!-- Card de herramientas -->
+                <!-- Card de herramientas 
                 <div class="col-md-4">
                     <div class="card text-center">
                         <div class="card-body">
@@ -100,6 +104,31 @@
                         </div>
                     </div>
                 </div>
+--> 
+
+<div class="col-md-4">
+  <div class="card text-center">
+    <div class="card-body">
+      <h5 class="card-title">Herramientas y Frameworks</h5>
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="${F}}" class="d-block w-100" alt="Herramienta 1">
+            <p class="carousel-caption d-none d-md-block">Descripción breve de la herramienta 1</p>
+          </div>
+          <div class="carousel-item">
+            <img src="ruta/a/tu/imagen2.jpg" class="d-block w-100" alt="Herramienta 2">
+            <p class="carousel-caption d-none d-md-block">Descripción breve de la herramienta 2</p>
+          </div>
+          <div class="carousel-item">
+            <img src="ruta/a/tu/imagen3.jpg" class="d-block w-100" alt="Herramienta 3">
+            <p class="carousel-caption d-none d-md-block">Descripción breve de la herramienta 3</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
                 <!-- Card de bases de datos -->
                 <div class="col-md-4">
@@ -130,6 +159,7 @@
             </div>
         </div>
     </main>
+
 
     <script src="CSS/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
 </body>

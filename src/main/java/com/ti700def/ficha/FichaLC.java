@@ -17,6 +17,7 @@ public class FichaLC {
         titulo="C/C++";
         descripcion=" Desarrollo de proyectos estudiantiles y asignaciones, asi como modeladode metodos numericos, ademas"
                 + " de PIC/Arduino basicos      ";
+        fotoLenguaje="resouces/images/C_C_featuredimage.png";
     }
 
     public String getTitulo() {

@@ -11,7 +11,7 @@ package com.ti700def.ficha;
 public class FichaLCS {
       private String titulo;
     private String descripcion;
-    private String fotoLenguaje;
+    private String fotoLenguaje="resources/images/charp.png";
     public FichaLCS() {
         
         titulo="C#";

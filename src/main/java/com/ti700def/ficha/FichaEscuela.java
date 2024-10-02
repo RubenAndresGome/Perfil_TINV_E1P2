@@ -4,18 +4,27 @@
  */
 package com.ti700def.ficha;
 
+import jakarta.enterprise.context.RequestScoped;
+import jakarta.inject.Named;
+
 /**
  *
  * @author samsu
  */
-public class FichaPy {
-      private String titulo;
+@Named
+@RequestScoped
+
+public class FichaEscuela implements Ficha{
+
+    private String titulo;
     private String descripcion;
-    private String fotoLenguaje="resouces/images/python.png";
-    public FichaPy() {
+    private String fotoPerfil;
+    public FichaEscuela() {
         
-        titulo="Phyton";
-        descripcion="nmetodos numericos en consola, interfaces graficas, y proyectos escolares.    ";
+        titulo="Estudios Universitarios";
+        descripcion="Estudiante del Instituto Superior de Salvatierra en regla con el Tecnologico nacional"
+                + "de Mexico en , la carrera TICS con especialidad en Deses Industriales";
+        this.fotoPerfil="resouces/images/logo ITESS.png";
     }
 
     public String getTitulo() {
@@ -35,12 +44,15 @@ public class FichaPy {
     }
 
     public String getFotoPerfil() {
-        return fotoLenguaje;
+        return fotoPerfil;
     }
 
     public void setFotoPerfil(String fotoPerfil) {
-        this.fotoLenguaje = fotoPerfil;
+        this.fotoPerfil = fotoPerfil;
     }
+    
+    
+    
     
     
     
