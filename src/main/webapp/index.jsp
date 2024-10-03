@@ -9,190 +9,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil del Desarrollador</title>
-    <link rel="stylesheet" href="CSS/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <title>Portafolio de Desarrollador Junior</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
-            background-color: #000; /* Fondo negro */
-            color: #fff; /* Texto blanco */
+            background-color: #e9ecef;
+        }
+        .header {
+            background-color: #343a40;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .header p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        .project {
+            margin-bottom: 30px;
+        }
+        .project img {
+            height: 200px;
+            object-fit: cover;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
         .card {
-            background-color: #1c1c1c; /* Fondo oscuro para las cards */
-            border: none; /* Sin bordes */
+            transition: transform 0.2s;
         }
-        .card-title {
-            color: #ffcc00; /* Título en amarillo */
-        }
-        .card-text {
-            color: #bbb; /* Texto de la descripción en gris claro */
-        }
-        .container {
-            margin-top: 30px; /* Margen superior */
+        .card:hover {
+            transform: scale(1.05);
         }
     </style>
-    
-
 </head>
 <body>
-    <main>
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark text-white">
-            <div class="container-fluid">
-                <a class="navbar-brand text-warning" href="#">TICS DEV</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre mí</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Proyectos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
 
-        <div class="container">
-            <h1 class="text-center">Perfil del Desarrollador</h1>
+    <header class="header">
+        <h1>${fichaDesarrollador.titulo}</h1>
+        <p>Desarrollador Web Junior</p>
+        <a href="#projects" class="btn btn-light btn-lg">Ver Proyectos</a>
+    </header>
 
-            <!-- Card con la descripción personal -->
-            <div class="card text-center mb-4">
-                <div class="card-body">
-                    <h2 class="card-title text-white"> ${fichaDesarrollador.titulo}</h2>
-                    <h5 class="text-align-center text-white"> ${fichaDesarrollador.descripcion}</h5>
-                           
-                </div>
-            </div>
+    <div class="container mt-5">
+        <section id="about">
+            <h2 class="text-center">${fichaDesarrollador.titulo}</h2>
+            <p class="text-center">${fichaDesarrollador.descripcion}
+                
+            </p>
+        </section>
 
-            <!-- Grupo de cards con lenguajes y herramientas -->
+        <section id="projects" class="mt-5">
+            <h2 class="text-center">Lenguajes</h2>
             <div class="row">
-                <!-- Card de lenguajes de programación -->
-                <div class="col-md-4">
-                    <div class="card text-center">
-                        <img src="${fichaEscuela.fotoPerfil}" class="card-img-top" alt="...">
+                <div class="col-md-4 project">
+                    <div class="card">
+                        <img src="resouces/images/c#.png" class="card-img-top" alt="Proyecto 1">
                         <div class="card-body">
-                           
-                    <ul class="list-group list-group-flush bg-dark">
-                        <li class="list-group-item  fw-bold">${fichaEscuela.descripcion}</li>
-                          <li class="list-group-item "> preparatoria : CETIS 85</li>
-                        <li class="list-group-item ">Estudios Secundarios: Sec. 5 Celaya</li>
-                    </ul>
+                            <h5 class="card-title">${fichaCSHARP.titulo}</h5>
+                            <p class="card-text">${fichaCSHARP.descripcion}</p>
                             
                         </div>
                     </div>
                 </div>
-
-            
-<div class="align-self-end row justify-content-center mt-6">
-  <div class="col-md-6">
-    <div class="card text-center">
-      <div class="card-body">
-        <h5 class="card-title">Lenguajes de Programación</h5>
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-          <!-- Indicadores -->
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-
-          <!-- Carrusel -->
-          <div class="carousel-inner">
-              
-            <!-- Primer elemento -->
-            <div class="carousel-item active">
-              <img src="${ fichaCSHARP.fotoLenguaje }" class="d-block w-100" alt="${ fichaCSHARP.titulo }">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>${ fichaCSHARP.titulo }</h5>
-                <p>${ fichaCSHARP.descripcion }
-                    ${fichaCSHARP.descripcion}
-                    ${fichaCSHARP.titulo}
-                
-                </p>
-              </div>
-            </div>
-
-            <!-- Segundo elemento -->
-            <div class="carousel-item">
-              <img src="${ fichaPy.fotoPerfil }" style="max-width:400px" class="d-block w-100" alt="${ fichaPy.titulo }">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>${ fichaPy.titulo }</h5>
-                <p>${ fichaPy.descripcion }</p>
-              </div>
-            </div>
-
-            <!-- Tercer elemento -->
-            <div class="carousel-item">
-                <img src="${ fichaLC.fotoPerfil }" class="d-block w-100" alt="${ fichaLC.titulo }">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>${ fichaLC.titulo }</h5>
-                <p>${ fichaLC.descripcion }</p>
-              </div>
-            </div>
-              
-              
-          </div>
-
-          <!-- Controles del carrusel -->
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Siguiente</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-    
-      <div class="col-md-4">
-  <div class="card text-center" style="background-color: black;">
-    <div class="card-body">
-      <h5 class="card-title text-warning">Bases de Datos</h5>
-      <div id="list-example" class="list-group">
-        <a class="list-group-item list-group-item-action" href="#list-item-1">MySQL</a>
-       
-      </div>
-      <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-        <h4 id="list-item-1" class="text-white">MySQL</h4>
-        <p class="text-white text-justify">MySQL es un sistema de gestión de bases de datos relacionales (RDBMS) muy popular.
-            MySQL Workbench es una herramienta gráfica para administrar bases de datos MySQL</p>
-      
-      </div>
-    </div>
-  </div>
-</div>
-
-          
-          
-      
-          <!-- Panel de detalles de la investigación -->
-            <div class="card mt-4 text-white header">
-                <div class="card-header">
-                    <p class="h3">Taller de investigacion</p>
+                            
+                <div class="col-md-4 project">
+                    <div class="card">
+                        <img src="proyecto2.jpg" class="card-img-top" alt="Proyecto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Proyecto 2</h5>
+                            <p class="card-text">Descripción breve del proyecto 2.</p>
+                            
+                        </div>
+                    </div>
                 </div>
-                <div class="card-body text-whita">
-                    <p><strong>Descripción:</strong> Consultar como desarrollar una aplicacin con Java, Galssfish y Bootstrap</p>
-                  
+                <div class="col-md-4 project">
+                    <div class="card">
+                        <img src="proyecto3.jpg" class="card-img-top" alt="Proyecto 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Proyecto 3</h5>
+                            <p class="card-text">Descripción breve del proyecto 3.</p>
+                                                   </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </main>
+        </section>
 
+        <section id="contact" class="mt-5">
+            <h2 class="text-center">Contacto</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico">
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Tu mensaje"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+            </form>
+        </section>
+    </div>
 
-    <script src="CSS/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <footer>
+        <p>&copy; 2024 Nombre del Desarrollador. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

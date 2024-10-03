@@ -21,7 +21,7 @@ public class FichaCSHARP {
     public FichaCSHARP() {
         titulo = "C#";
         descripcion = "Aplicaciones de escritorio básicas, desarrollo de interfaces simples, Apps de consola";
-        fotoLenguaje = "resources/images/charp.png";
+        fotoLenguaje = "/resouces/images/c#.png";
     }
 
     public String getTitulo() {
