@@ -21,7 +21,7 @@ public class FichaDesarrollador implements Ficha{
     private String fotoPerfil;
     public FichaDesarrollador() {
         
-        titulo="ruben Andres Gomez Molina";
+        titulo="Ruben Andres Gomez Molina";
         descripcion=" Soy un estudiante de ingenieria en las TICs, que aun cursa la carrera con algo"
                 + "de comprension en la porogramacion Basica en varios lenguajes como c,C++, C#, java y phyton asi "
                 + "como algo de experiencia con la utilizacion de microcontroladores";
