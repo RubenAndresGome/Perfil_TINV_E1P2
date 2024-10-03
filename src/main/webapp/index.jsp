@@ -90,23 +90,8 @@
                     </div>
                 </div>
 
-                <!-- Card de herramientas 
-                <div class="col-md-4">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <h5 class="card-title">Herramientas y Frameworks</h5>
-                            <ul class="list-unstyled">
-                                <li>Spring Boot</li>
-                                <li>Node.js</li>
-                                <li>React</li>
-                                <li>Bootstrap</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
---> 
-
-<div class="align-self-end row justify-content-center mt-6 ">
+            
+<div class="align-self-end row justify-content-center mt-6">
   <div class="col-md-6">
     <div class="card text-center">
       <div class="card-body">
@@ -122,38 +107,40 @@
           <!-- Carrusel -->
           <div class="carousel-inner">
               
-              
             <!-- Primer elemento -->
             <div class="carousel-item active">
-              <img src="${ fichaLCS.fotoPerfil }" class="d-block w-100" alt="${ fichaLCS.titulo }">
+              <img src="${ fichaCSHARP.fotoLenguaje }" class="d-block w-100" alt="${ fichaCSHARP.titulo }">
               <div class="carousel-caption d-none d-md-block">
-                <h5>${ fichaLCS.titulo }</h5>
-                <p>${ fichaLCS.descripcion }</p>
+                <h5>${ fichaCSHARP.titulo }</h5>
+                <p>${ fichaCSHARP.descripcion }
+                    ${fichaCSHARP.descripcion}
+                    ${fichaCSHARP.titulo}
+                
+                </p>
               </div>
             </div>
-              
-              
+
             <!-- Segundo elemento -->
-             <div class="carousel-item">
-                 <img src="${fichaCSHARP.fotoPerfil}" class="d-block w-100" alt="${fichaCSHARP.titulo}">
-              <div class="carousel-caption d-none d-md-block">
-                  <h5>${ fichaCSHARP.titulo }</h5>
-                <p>${ fichaCSHARP.descripcion }</p>
-              </div>
-            </div>
-              
-              
-            <!-- Tercer elemento -->
             <div class="carousel-item">
-              <img src="${ fichaPy.fotoPerfil }" class="d-block w-100" alt="${ fichaPy.titulo }">
+              <img src="${ fichaPy.fotoPerfil }" style="max-width:400px" class="d-block w-100" alt="${ fichaPy.titulo }">
               <div class="carousel-caption d-none d-md-block">
                 <h5>${ fichaPy.titulo }</h5>
                 <p>${ fichaPy.descripcion }</p>
               </div>
             </div>
+
+            <!-- Tercer elemento -->
+            <div class="carousel-item">
+                <img src="${ fichaLC.fotoPerfil }" class="d-block w-100" alt="${ fichaLC.titulo }">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>${ fichaLC.titulo }</h5>
+                <p>${ fichaLC.descripcion }</p>
+              </div>
+            </div>
+              
+              
           </div>
 
-              
           <!-- Controles del carrusel -->
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -171,12 +158,7 @@
 
 
     
-
-              
-    
-              
-  
-           <div class="col-md-4">
+      <div class="col-md-4">
   <div class="card text-center" style="background-color: black;">
     <div class="card-body">
       <h5 class="card-title text-warning">Bases de Datos</h5>

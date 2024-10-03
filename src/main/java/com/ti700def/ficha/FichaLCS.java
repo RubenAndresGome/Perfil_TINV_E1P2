@@ -7,7 +7,7 @@ package com.ti700def.ficha;
 import jakarta.enterprise.context.RequestScoped;
 import jakarta.inject.Named;
 
-@Named
+@Named("fichaLCS")
 @RequestScoped
 public class FichaLCS {
       private String titulo;

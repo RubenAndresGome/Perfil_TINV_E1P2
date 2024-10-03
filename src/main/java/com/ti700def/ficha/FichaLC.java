@@ -11,7 +11,7 @@ import jakarta.inject.Named;
  *
  * @author samsu
  */
-@Named
+@Named("fichaLC")
 @RequestScoped
 
 public class FichaLC {

@@ -11,21 +11,17 @@ import jakarta.inject.Named;
  *
  * @author samsu
  */
-
 @Named
 @RequestScoped
-
 public class FichaCSHARP {
-      private String titulo;
+    private String titulo;
     private String descripcion;
     private String fotoLenguaje;
+
     public FichaCSHARP() {
-        
-     
-        titulo="C#";
-        descripcion=" Aplicaciones de escritorio basicas, desarrollo de interfaces simples"
-                + "Apps de consola    ";
-        fotoLenguaje="resources/images/charp.png";
+        titulo = "C#";
+        descripcion = "Aplicaciones de escritorio básicas, desarrollo de interfaces simples, Apps de consola";
+        fotoLenguaje = "resources/images/charp.png";
     }
 
     public String getTitulo() {
@@ -44,15 +40,11 @@ public class FichaCSHARP {
         this.descripcion = descripcion;
     }
 
-    public String getFotoPerfil() {
+    public String getFotoLenguaje() {
         return fotoLenguaje;
     }
 
-    public void setFotoPerfil(String fotoPerfil) {
-        this.fotoLenguaje = fotoPerfil;
+    public void setFotoLenguaje(String fotoLenguaje) {
+        this.fotoLenguaje = fotoLenguaje;
     }
-    
-    
-    
 }
-
