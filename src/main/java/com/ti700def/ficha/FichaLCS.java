@@ -4,19 +4,21 @@
  */
 package com.ti700def.ficha;
 
-/**
- *
- * @author samsu
- */
+import jakarta.enterprise.context.RequestScoped;
+import jakarta.inject.Named;
+
+@Named
+@RequestScoped
 public class FichaLCS {
       private String titulo;
     private String descripcion;
-    private String fotoLenguaje="resources/images/charp.png";
+    private String fotoLenguaje="resouces/images/charp_1.png";
     public FichaLCS() {
         
         titulo="C#";
         descripcion=" Aplicaciones de escritorio basicas, desarrollo de interfaces simples"
                 + "Apps de consola    ";
+        fotoLenguaje="resources/images/charp.png";
     }
 
     public String getTitulo() {

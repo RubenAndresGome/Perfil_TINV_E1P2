@@ -106,55 +106,105 @@
                 </div>
 --> 
 
-<div class="col-md-4">
-  <div class="card text-center">
-    <div class="card-body">
-      <h5 class="card-title">Herramientas y Frameworks</h5>
-      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="${F}}" class="d-block w-100" alt="Herramienta 1">
-            <p class="carousel-caption d-none d-md-block">Descripción breve de la herramienta 1</p>
+<div class="align-self-end row justify-content-center mt-6 ">
+  <div class="col-md-6">
+    <div class="card text-center">
+      <div class="card-body">
+        <h5 class="card-title">Lenguajes de Programación</h5>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <!-- Indicadores -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
-          <div class="carousel-item">
-            <img src="ruta/a/tu/imagen2.jpg" class="d-block w-100" alt="Herramienta 2">
-            <p class="carousel-caption d-none d-md-block">Descripción breve de la herramienta 2</p>
+
+          <!-- Carrusel -->
+          <div class="carousel-inner">
+              
+              
+            <!-- Primer elemento -->
+            <div class="carousel-item active">
+              <img src="${ fichaLCS.fotoPerfil }" class="d-block w-100" alt="${ fichaLCS.titulo }">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>${ fichaLCS.titulo }</h5>
+                <p>${ fichaLCS.descripcion }</p>
+              </div>
+            </div>
+              
+              
+            <!-- Segundo elemento -->
+             <div class="carousel-item">
+                 <img src="${fichaCSHARP.fotoPerfil}" class="d-block w-100" alt="${fichaCSHARP.titulo}">
+              <div class="carousel-caption d-none d-md-block">
+                  <h5>${ fichaCSHARP.titulo }</h5>
+                <p>${ fichaCSHARP.descripcion }</p>
+              </div>
+            </div>
+              
+              
+            <!-- Tercer elemento -->
+            <div class="carousel-item">
+              <img src="${ fichaPy.fotoPerfil }" class="d-block w-100" alt="${ fichaPy.titulo }">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>${ fichaPy.titulo }</h5>
+                <p>${ fichaPy.descripcion }</p>
+              </div>
+            </div>
           </div>
-          <div class="carousel-item">
-            <img src="ruta/a/tu/imagen3.jpg" class="d-block w-100" alt="Herramienta 3">
-            <p class="carousel-caption d-none d-md-block">Descripción breve de la herramienta 3</p>
-          </div>
+
+              
+          <!-- Controles del carrusel -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-                <!-- Card de bases de datos -->
-                <div class="col-md-4">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <h5 class="card-title">Bases de Datos</h5>
-                            <ul class="list-unstyled">
-                                <li>MySQL</li>
-                                <li>PostgreSQL</li>
-                                <li>MongoDB</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Panel de detalles de la investigación -->
-            <div class="card mt-4">
+    
+
+              
+    
+              
+  
+           <div class="col-md-4">
+  <div class="card text-center" style="background-color: black;">
+    <div class="card-body">
+      <h5 class="card-title text-warning">Bases de Datos</h5>
+      <div id="list-example" class="list-group">
+        <a class="list-group-item list-group-item-action" href="#list-item-1">MySQL</a>
+       
+      </div>
+      <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+        <h4 id="list-item-1" class="text-white">MySQL</h4>
+        <p class="text-white text-justify">MySQL es un sistema de gestión de bases de datos relacionales (RDBMS) muy popular.
+            MySQL Workbench es una herramienta gráfica para administrar bases de datos MySQL</p>
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+          
+          
+      
+          <!-- Panel de detalles de la investigación -->
+            <div class="card mt-4 text-white header">
                 <div class="card-header">
-                    <p class="h3">Título de la Investigación</p>
+                    <p class="h3">Taller de investigacion</p>
                 </div>
-                <div class="card-body">
-                    <p><strong>Descripción:</strong> Aquí va una breve descripción de la investigación.</p>
-                    <p><strong>Referencia:</strong> Aquí va la referencia de la investigación.</p>
-                    <!-- Mostrar la imagen -->
-                    <img src="ruta/a/la/imagen.jpg" class="img-fluid" alt="Imagen de la investigación">
+                <div class="card-body text-whita">
+                    <p><strong>Descripción:</strong> Consultar como desarrollar una aplicacin con Java, Galssfish y Bootstrap</p>
+                  
                 </div>
             </div>
         </div>

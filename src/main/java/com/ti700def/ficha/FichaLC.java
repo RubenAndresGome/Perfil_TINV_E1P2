@@ -4,10 +4,16 @@
  */
 package com.ti700def.ficha;
 
+import jakarta.enterprise.context.RequestScoped;
+import jakarta.inject.Named;
+
 /**
  *
  * @author samsu
  */
+@Named
+@RequestScoped
+
 public class FichaLC {
       private String titulo;
     private String descripcion;
@@ -17,7 +23,7 @@ public class FichaLC {
         titulo="C/C++";
         descripcion=" Desarrollo de proyectos estudiantiles y asignaciones, asi como modeladode metodos numericos, ademas"
                 + " de PIC/Arduino basicos      ";
-        fotoLenguaje="resouces/images/C_C_featuredimage.png";
+        fotoLenguaje="resouces/images/CCMAS.png";
     }
 
     public String getTitulo() {

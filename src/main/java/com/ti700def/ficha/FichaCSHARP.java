@@ -11,17 +11,21 @@ import jakarta.inject.Named;
  *
  * @author samsu
  */
+
 @Named
 @RequestScoped
 
-public class FichaPy {
+public class FichaCSHARP {
       private String titulo;
     private String descripcion;
-    private String fotoLenguaje="resouces/images/python.png";
-    public FichaPy() {
+    private String fotoLenguaje;
+    public FichaCSHARP() {
         
-        titulo="Phyton";
-        descripcion="nmetodos numericos en consola, interfaces graficas, y proyectos escolares.    ";
+     
+        titulo="C#";
+        descripcion=" Aplicaciones de escritorio basicas, desarrollo de interfaces simples"
+                + "Apps de consola    ";
+        fotoLenguaje="resources/images/charp.png";
     }
 
     public String getTitulo() {
@@ -51,3 +55,4 @@ public class FichaPy {
     
     
 }
+
